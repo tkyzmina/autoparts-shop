@@ -414,6 +414,52 @@
       </article>
 
     </section>
+    <section class="search">
+      <h2 class="visually-hidden">Поиск по сайту</h2>
+      <ul class="search__tabs">
+        <li class="search__item">
+          <a href="#" data-control="1">Поиск по Vin</a>
+        </li>
+        <li class="search__item search__item--active">
+          <a href="#" data-control="2">Поиск по марке</a>
+        </li>
+        <li class="search__item">
+          <a href="#" data-control="3">Поиск по названию товара</a>
+        </li>
+        <li class="search__item">
+          <a href="#" data-control="4">Поиск по артикулу</a>
+        </li>
+      </ul>
+      <div class="search__inputs">
+        <form class="search__form search__form--active" method="post" action="#" data-tab="1">
+          <label>
+            <input type="search" name="search-vin" placeholder="Введите Vin автомобиля">
+          </label>
+          <button type="submit">искать</button>
+        </form>
+        <form class="search__form" method="post" action="#" data-tab="2">
+          <label>
+            <input type="search" name="search-vin" placeholder="Введите марку автомобиля">
+          </label>
+          <button type="submit">искать</button>
+        </form>
+        <form class="search__form" method="post" action="#" data-tab="3">
+          <label>
+            <input type="search" name="search-vin" placeholder="Введите название товара">
+          </label>
+          <button type="submit">искать</button>
+        </form>
+        <form class="search__form" method="post" action="#" data-tab="4">
+          <label>
+            <input type="search" name="search-vin" placeholder="Введите артикул товара">
+          </label>
+          <button type="submit">искать</button>
+        </form>
+
+
+      </div>
+
+    </section>
     <section class="groups">
       <div class="group-item">
         <a class="catalog-card" href="#">
@@ -497,7 +543,7 @@
 
     </section>
     <section class="popular">
-
+      <h2 class="visually-hidden">Популярные товары</h2>
 
       <div class="popular__slider">
         <div class="swiper-prev swiper-btn"></div>
