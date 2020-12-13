@@ -1,8 +1,3 @@
-.popular {
-  // width: 100%;
-
-}
-
 .popular__slider {
   position: relative;
 }
@@ -12,7 +7,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background-image: url("/img/arrow-left-gray.svg");
+  background-image: url("../img/arrow-left-gray.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(255, 255, 255, 0.3);
@@ -48,15 +43,6 @@
     margin: 0 auto;
     width: 75%;
   }
-
-  // .swiper-prev {
-  //   left: -20px;
-  // }
-
-  // .swiper-next {
-  //   right: -20px;
-  // }
-
 }
 
 @media(max-width: 767px) {
@@ -64,10 +50,6 @@
     margin: 0 auto;
     width: 270px;
   }
-
-  // .swiper-btn {
-  //   display: none;
-  // }
 }
 
 @media(max-width: 425px) {
