@@ -192,7 +192,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 
     svg {
-      stroke: #E5E5E5;
+      stroke: #e5e5e5;
       fill: none;
       width: 43px;
       justify-content: center;
@@ -268,7 +268,6 @@
     left: 0;
     z-index: 100;
     background-color: #ffffff;
-    // transform: translateX(-242px);
     transition: all $transition-props;
   }
 
@@ -310,11 +309,8 @@
 
     &--active {
       span {
-        // width: 46;
-
         &:nth-of-type(1) {
           position: relative;
-          // bottom: -12px;
           transform: translateY(12px) rotate(-45deg) scaleX(1.2);
         }
 
@@ -324,18 +320,9 @@
 
         &:nth-of-type(3) {
           position: relative;
-          // top: 50%;
-
-          // bottom: 12px;
           transform: translateY(-12px) rotate(45deg) scaleX(1.2);
         }
       }
     }
   }
 }
-
-// .main--show-menu,
-// .header--show-menu {
-//   position: static;
-//   transform: translateX(242px)
-// }
