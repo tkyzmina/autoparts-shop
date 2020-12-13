@@ -1,0 +1,90 @@
+.catalog-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 16px 25px;
+  padding-left: 19px;
+  text-decoration: none;
+  color: $color-gray;
+  background: $color-white;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  transition: all $transition-props;
+
+
+  &:hover,
+  &:focus {
+    h3 {
+      color: $color-orange;
+    }
+
+    border: 1px solid transparent;
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+    transition: all $transition-props;
+  }
+}
+
+.catalog-card__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60%;
+  min-height: 89px;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: $text-bold;
+    font-size: 23px;
+    line-height: 28px;
+    transition: all $transition-props;
+  }
+
+  span {
+    margin: 0;
+    padding: 0;
+    font-weight: $text-regular;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-light-gray;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 11px;
+      margin-left: 5px;
+      background-repeat: no-repeat;
+      background-image: url("/img/arrow-link.svg");
+    }
+  }
+}
+
+.catalog-card__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  background-color: $color-orange;
+
+  svg {
+    fill: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+
+  .catalog-card__left {
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 75%;
+      height: 75%;
+    }
+  }
+}

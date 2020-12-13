@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Автозапчасти</title>
+  <link rel="preload" as="font" href="fonts/barlow-bold.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/barlow-bold.woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/barlow-regular.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/barlow-regular.woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/proxima-nova-bold.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/proxima-nova-bold.woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/proxima-nova-regular.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/proxima-nova-regular.woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/proxima-nova-semibold.woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/proxima-nova-semibold.woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="header">
+
+    <div class="header__mob-menu">
+      <ul class="header__mob-menu-list">
+        <li class="header__mob-menu-item user-login">
+          <a href="#">
+            <svg width="14" height="15">
+              <use xlink:href="#user-icon"></use>
+            </svg>
+            <span>Войти</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item">
+          <a href="#">
+            <svg width="14" height="15">
+              <use xlink:href="#user-icon"></use>
+            </svg>
+            <span>Регистрация</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item">
+          <a href="#">
+            <svg width="17" height="15">
+              <use xlink:href="#fav-icon"></use>
+            </svg>
+            <span>Избранное</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item">
+          <a href="#">
+            <svg width="13" height="16">
+              <use xlink:href="#shop-icon"></use>
+            </svg>
+            <span>Магазины</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--percent">
+          <a href="#">
+            <svg width="15" height="16">
+              <use xlink:href="#percent-icon"></use>
+            </svg>
+            <span>Акции</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item">
+          <a href="#">
+            <svg width="16" height="15">
+              <use xlink:href="#box-icon"></use>
+            </svg>
+            <span> Доставка
+              и оплата</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span>Каталог запчастей</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span>Каталог ТО</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            Шины
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span>Диски</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span> Аккумуляторы</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span>Автомасла</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span> Автолампы</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--no-icon">
+          <a href="#">
+            <span>Аксессуары</span>
+          </a>
+        </li>
+        <li class="header__mob-menu-item header__mob-menu-item--adress">
+          <a href="#">
+            <span>Санкт-Петербург, ул Большая Конюшенная, д 19</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__line">
+      <div class="header__top container">
+        <button class="header__button" aria-label="Открыть мобильное меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__menu">
+          <ul>
+            <li>
+              <a href="#">Магазины</a>
+            </li>
+            <li>
+              <a href="#">Акции</a>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__logo">
+          <a href="#">
+            <svg width="102" height="52">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__address">
+          <a href="#" aria-label="Открыть на карте">
+            <svg width="26" height="27">
+              <use xlink:href="#point-icon"></use>
+            </svg>
+          </a>
+          <p>Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+        </div>
+        <div class="header__user-menu">
+          <ul>
+            <li>
+              <a href="#" aria-label="Избранное">
+                <svg width="27" height="25">
+                  <use xlink:href="#fav-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Личный кабинет">
+                <svg width="24" height="26">
+                  <use xlink:href="#user-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Корзина">
+                <svg width="30" height="28">
+                  <use xlink:href="#cart-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header__line">
+      <div class="header__bottom container">
+        <ul class="header__bottom-menu">
+          <li class="header__bottom-item">
+            <a href="#">Каталог Запчастей</a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#">Каталог ТО</a>
+          </li>
+          <li class="header__bottom-item header__bottom-item--active">
+            <a href="#">Шины</a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#">Диски</a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#">Аккумуляторы</a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#">Автомасла</a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#">Автолампы</a>
+          </li>
+          <li class="header__bottom-item">
+            <a href="#">Аксессуары</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+  <main class="container">
+    <section class="promo">
+      <div class="promo__slider">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="img/image@1x.png" srcset="img/image@2x.png 2x" alt="Изображение двигателя" width="870"
+                height="397">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image@1x.png" srcset="img/image@2x.png 2x" alt="Изображение двигателя" width="870"
+                height="397">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image@1x.png" srcset="img/image@2x.png 2x" alt="Изображение двигателя" width="870"
+                height="397">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image@1x.png" srcset="img/image@2x.png 2x" alt="Изображение двигателя" width="870"
+                height="397">
+            </div>
+            <div class="swiper-slide">
+              <img src="img/image@1x.png" srcset="img/image@2x.png 2x" alt="Изображение двигателя" width="870"
+                height="397">
+            </div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+      </div>
+      <article class="promo__block">
+        <a href="#" class="promo__card">
+          <div class="promo__card-top">
+            <div class="promo__tag promo-tag">
+              <p>Акция</p>
+            </div>
+            <div class="promo__price">
+              <p class="promo__price-new">200
+                <svg width="14" height="17">
+                  <use xlink:href="#rub-icon"></use>
+                </svg>
+              </p>
+              <p class="promo__price-old">500
+                <svg width="11" height="13">
+                  <use xlink:href="#rub-icon"></use>
+                </svg>
+              </p>
+            </div>
+            <div class="promo__card-img">
+              <img src="img/promo/lamp@1x.png" srcset="img/promo/lamp@2x.png 2x" alt="Изображение лампы" width="150"
+                height="187">
+            </div>
+
+
+          </div>
+          <div class="promo__card-bottom">
+            <h3 class="promo__card-title clipped">Лампочка minimun</h3>
+            <div class="promo__card-date">
+              <p>До конца акции осталось:</p>
+              <div class="promo__card-timer">
+                <svg width="28" height="28">
+                  <use xlink:href="#timer-icon"></use>
+                </svg>
+                <div class="timer">
+                  <div><span class="js-timer-hours">00</span><span>часов</span></div>
+                  <div><span class="js-timer-minutes">20</span><span>минут</span></div>
+                  <div><span class="js-timer-days">00</span><span>секунд</span></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </a>
+
+      </article>
+
+    </section>
+    <section class="groups">
+      <div class="group-item">
+        <a class="catalog-card" href="#">
+          <div class="catalog-card__right">
+            <h3>Автохимия</h3>
+            <span>Перейти</span>
+          </div>
+          <div class="catalog-card__left">
+            <svg width="40" height="60">
+              <use xlink:href="#cat1-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="group-item">
+        <a class="catalog-card" href="#">
+          <div class="catalog-card__right">
+            <h3>Шины и диски</h3>
+            <span>Перейти</span>
+          </div>
+          <div class="catalog-card__left">
+            <svg width="63" height="63">
+              <use xlink:href="#cat2-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="group-item">
+        <a class="catalog-card" href="#">
+          <div class="catalog-card__right">
+            <h3>Инструменты</h3>
+            <span>Перейти</span>
+          </div>
+          <div class="catalog-card__left">
+            <svg width="44" height="81">
+              <use xlink:href="#cat3-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="group-item">
+        <a class="catalog-card" href="#">
+          <div class="catalog-card__right">
+            <h3>Запчасти на ТО</h3>
+            <span>Перейти</span>
+          </div>
+          <div class="catalog-card__left">
+            <svg width="55" height="55">
+              <use xlink:href="#cat4-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="group-item">
+        <a class="catalog-card" href="#">
+          <div class="catalog-card__right">
+            <h3>Автоэлектроника</h3>
+            <span>Перейти</span>
+          </div>
+          <div class="catalog-card__left">
+            <svg width="63" height="49">
+              <use xlink:href="#cat5-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="group-item">
+        <a class="catalog-card" href="#">
+          <div class="catalog-card__right">
+            <h3>Аксессуары
+              и другое</h3>
+            <span>Перейти</span>
+          </div>
+          <div class="catalog-card__left">
+            <svg width="29" height="64">
+              <use xlink:href="#cat6-icon"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+    </section>
+    <section class="popular">
+
+
+      <div class="popular__slider">
+        <div class="swiper-prev swiper-btn"></div>
+        <div class="swiper-next swiper-btn"></div>
+        <div class="swiper-container1 swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <article class="product-card">
+                <a class="product-card__inner" href="#">
+                  <div class="product-card__top">
+                    <div class="fav-tag"></div>
+                    <div class="product-card__tags">
+                      <button class="fav-tag" type="button" aria-label="Додбавить в избранное" tabindex="0">
+                        <svg width="28" height="24">
+                          <use xlink:href="#fav-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="product-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product/belt@1x.webp 1x, img/product/belt@2x.webp 2x">
+                        <img src="img/product/belt@1x.png" srcset="img/product/belt@2x.png 2x" alt="Изображение ремень"
+                          width="230" height="215">
+                      </picture>
+
+                    </div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <h3 class="product-card__title">Ремень</h3>
+                    <span class="product-card__price">440&nbsp;&#8381;
+                    </span>
+                    <div class="to-cart-tag"></div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="product-card">
+                <a class="product-card__inner" href="#">
+                  <div class="product-card__top">
+                    <div class="sale-tag">Sale</div>
+                    <div class="product-card__tags">
+                      <button class="fav-tag" type="button" aria-label="Додбавить в избранное" tabindex="0">
+                        <svg width="28" height="24">
+                          <use xlink:href="#fav-icon"></use>
+                        </svg>
+                      </button>
+                      <div class="snow-tag">
+                        <svg width="27" height="30">
+                          <use xlink:href="#snow-icon"></use>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="product-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product/wheel1@1x.webp 1x, img/product/wheel1@2x.webp 2x">
+                        <img src="img/product/wheel1@1x.png" srcset="img/product/wheel1@2x.png 2x"
+                          alt="Изображение Шина 205/80 R16 104Q Misha RF Power Grum" width="151" height="180">
+                      </picture>
+
+                    </div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <h3 class="product-card__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                    <span class="product-card__price">11&nbsp;680&nbsp;&#8381;
+
+                    </span>
+                    <div class="to-cart-tag"></div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="product-card">
+                <a class="product-card__inner" href="#">
+                  <div class="product-card__top">
+                    <div class="product-card__tags">
+                      <button class="fav-tag" type="button" aria-label="Додбавить в избранное" tabindex="0">
+                        <svg width="28" height="24">
+                          <use xlink:href="#fav-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="product-card__img">
+                      <picture>
+                        <source type="image/webp"
+                          srcset="img/product/headlight1@1x.webp 1x, img/product/headlight1@2x.webp 2x">
+                        <img src="img/product/headlight1@1x.png" srcset="img/product/headlight1@2x.png 2x"
+                          alt="Изображение Фара Nokian 2025" width="232" height="174">
+                      </picture>
+
+                    </div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <h3 class="product-card__title">Фара Nokian 2025</h3>
+                    <span class="product-card__price">680&nbsp;&#8381;</span>
+                    <div class="to-cart-tag"></div>
+                  </div>
+                </a>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="product-card">
+                <a class="product-card__inner" href="#">
+                  <div class="product-card__top">
+                    <div class="sale-tag">Sale</div>
+                    <div class="product-card__tags">
+                      <button class="fav-tag fav-tag--active" type="button" aria-label="Додбавить в избранное"
+                        tabindex="0">
+                        <svg width="28" height="24">
+                          <use xlink:href="#fav-icon"></use>
+                        </svg>
+                      </button>
+                      <div class="sun-tag">
+                        <svg width="31" height="31">
+                          <use xlink:href="#sun-icon"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="fav-tag"></div>
+                    <div class="product-card__img">
+                      <picture>
+                        <source type="image/webp" srcset="img/product/wheel2@1x.webp 1x, img/product/wheel2@2x.webp 2x">
+                        <img src="img/product/wheel2@1x.png" srcset="img/product/wheel2@2x.png 2x"
+                          alt="Шина 245/60 R18 105T Contyther Crosh" width="151" height="180">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="product-card__bottom">
+                    <h3 class="product-card__title">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
+                    <span class="product-card__price">440&nbsp;&#8381;
+                    </span>
+                    <div class="to-cart-tag"></div>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </section>
+
+
+  </main>
+  <script type="module" src="js/swiper.min.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>

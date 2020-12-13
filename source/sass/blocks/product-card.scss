@@ -1,0 +1,142 @@
+.product-card {
+  // width: 22.5%;
+  min-width: 270px;
+  width: 270px;
+  // margin: 0 15px;
+}
+
+.product-card__inner {
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  transition: all $transition-props;
+
+  &:hover,
+  &:focus {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
+    h3,
+    span {
+      color: $color-orange;
+    }
+
+  }
+}
+
+.product-card__top {
+  position: relative;
+  padding: 22px 20px 0;
+}
+
+.product-card__img {
+  width: 230px;
+  height: 180px;
+
+  img {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+}
+
+.sale-tag {
+  box-sizing: border-box;
+  position: absolute;
+  top: 19px;
+  left: -19px;
+  min-width: 63px;
+  min-height: 25px;
+  padding: 5px 0;
+
+  font-family: $font-second;
+  font-weight: $text-bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.07em;
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(91.1deg, #9710e9 1.17%, #fd8d43 99.31%);
+  transform: rotate(-90deg);
+}
+
+.product-card__tags {
+  margin-right: -21px;
+  height: 31px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  >div {
+    margin-right: 20px;
+  }
+}
+
+.fav-tag {
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-right: 20px;
+  cursor: pointer;
+
+  svg {
+    stroke: rgba(0, 0, 0, 0.3);
+    fill: none;
+  }
+
+  &:active {
+    svg {
+      stroke: $color-orange;
+      fill: $color-orange;
+    }
+  }
+
+  &--active {
+    svg {
+      stroke: $color-orange;
+      fill: $color-orange;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      opacity: 0.6;
+    }
+  }
+}
+
+.product-card__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 31px 20px 29px;
+  height: 170px;
+}
+
+.product-card__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: $text-regular;
+  text-align: center;
+  color: $color-gray;
+  transition: all $transition-props;
+}
+
+.product-card__price {
+  display: block;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: $text-bold;
+  text-align: center;
+  color: $color-gray;
+  transition: all $transition-props;
+}

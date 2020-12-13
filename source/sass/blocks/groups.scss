@@ -1,0 +1,29 @@
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0 -15px;
+}
+
+.group-item {
+  flex-grow: 1;
+  width: 30.83%;
+  min-width: 288px;
+  margin-bottom: 30px;
+  // margin-left: 30px;
+  margin: 0 15px 30px;
+}
+
+@media (max-width: 767px) {
+  .groups {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .group-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

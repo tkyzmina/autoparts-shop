@@ -1,0 +1,48 @@
+@mixin content-box-component {
+  box-sizing: content-box;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+@mixin no-hidden {
+  position: static;
+
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+  border: none;
+
+  clip: auto;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin reset-button {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  box-shadow: 0;
+  padding: 0;
+
+  cursor: pointer;
+}
