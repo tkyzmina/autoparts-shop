@@ -1,5 +1,6 @@
 .popular__slider {
   position: relative;
+  margin-bottom: 35px;
 }
 
 .swiper-btn {
@@ -34,31 +35,69 @@
 @media(max-width: 1290px) {
   .popular__slider {
     margin: 0 auto;
+    margin-bottom: 40px;
     width: calc(100% - 120px);
   }
 }
 
 @media(max-width: 768px) {
   .popular__slider {
-    margin: 0 auto;
     width: 75%;
   }
 }
 
 @media(max-width: 767px) {
   .popular__slider {
-    margin: 0 auto;
+    // margin: 0 auto;
     width: 270px;
   }
 }
 
 @media(max-width: 425px) {
   .popular__slider {
-    margin: 0 auto;
+    // margin: 0 auto;
     width: 270px;
   }
 
   .swiper-btn {
     display: none;
   }
+}
+
+.show-more {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 59px 14px;
+  font-family: $font-second;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bdbec2;
+  letter-spacing: 0.12em;
+  border: none;
+  background-color: #f0f0f4;
+  cursor: pointer;
+  transition: color $transition-props;
+
+  &:hover,
+  &:focus {
+    color: $color-gray;
+  }
+
+  &:active {
+    color: $lighten-color-gray;
+  }
+}
+
+.popular__title {
+  margin-bottom: 19px;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: $text-bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-gray;
 }

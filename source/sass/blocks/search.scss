@@ -7,9 +7,8 @@
   justify-items: flex-start;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 11px;
   padding: 0;
-  padding-top: 12px;
   list-style: none;
 }
 
@@ -17,7 +16,9 @@
   margin-right: 30px;
 
   a {
+    display: block;
     padding: 15px 20px 12px;
+    margin-bottom: 10px;
     font-family: $font-main;
     font-style: normal;
     font-weight: $text-regular;
@@ -101,5 +102,39 @@
 
   &--active {
     display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .search__tabs {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .search__item {
+    &--active {
+      a {
+        background: $color-white;
+        border-bottom: 2px solid $color-orange;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .search__form {
+    button {
+      width: 20px;
+      height: 100%;
+      font-size: 0px;
+      line-height: 0px;
+      background: url("../img/search-icon.svg") no-repeat;
+      background-position: center;
+    }
   }
 }

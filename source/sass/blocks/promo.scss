@@ -1,6 +1,7 @@
 .promo {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 80px;
   padding-top: 80px;
 }
@@ -25,7 +26,6 @@
     height: 100%;
   }
 }
-
 
 .promo__block {
   width: 23.1%;
@@ -150,7 +150,7 @@
 }
 
 .promo__card-date {
-  background-color: #F0F0F4;
+  background-color: #f0f0f4;
   padding: 17px 20px;
 
   p {
@@ -215,5 +215,21 @@
 
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .promo {
+    padding-top: 20px;
+  }
+
+  .promo__slider {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .promo__block {
+    width: 273px;
+    margin: 0 auto;
   }
 }

@@ -26,19 +26,19 @@ headerToggle.addEventListener('click', function () {
 const slider = document.querySelector('.swiper-container');
 
 let mySwiper = new Swiper(slider, {
-	slidesPerView: 1,
+  slidesPerView: 1,
   spaceBetween: 10,
-  	loop: true,
-	lazy: {
-		loadPrevNext: true,
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-	},
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
+  loop: true,
+  lazy: {
+    loadPrevNext: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
   scrollbar: {
     hide: true
@@ -49,18 +49,18 @@ const sliderPop = document.querySelector('.swiper-container1');
 
 let mySwiper1 = new Swiper(sliderPop, {
   slidesPerView: 4,
-  slidesPegGroup:1,
-  spaceBetween: 30,
+  slidesPegGroup: 1,
+  spaceBetween: 29,
   loop: true,
-  updateOnWindowResize:true,
+  updateOnWindowResize: true,
 
-	lazy: {
-		loadPrevNext: true,
-	},
+  lazy: {
+    loadPrevNext: true,
+  },
 
-	navigation: {
-		nextEl: '.swiper-next',
-		prevEl: '.swiper-prev',
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
   },
   breakpoints: {
     // when window width is >= 320px
@@ -68,20 +68,17 @@ let mySwiper1 = new Swiper(sliderPop, {
       slidesPerView: 1,
       spaceBetween: 0
     },
-    // when window width is >= 480px
     767: {
       slidesPerView: 2,
       spaceBetween: 10
     },
-    // when window width is >= 640px
     960: {
       slidesPerView: 3,
       spaceBetween: 30
     },
     1290: {
       slidesPerView: 4,
-      spaceBetween: 30
+      spaceBetween: 29
     },
-
   }
- })
+})

@@ -323,13 +323,13 @@
         </li>
       </ul>
       <div class="search__inputs">
-        <form class="search__form search__form--active" method="post" action="#" data-tab="1">
+        <form class="search__form" method="post" action="#" data-tab="1">
           <label>
             <input type="search" name="search-vin" placeholder="Введите Vin автомобиля">
           </label>
           <button type="submit">искать</button>
         </form>
-        <form class="search__form" method="post" action="#" data-tab="2">
+        <form class="search__form search__form--active" method="post" action="#" data-tab="2">
           <label>
             <input type="search" name="search-vin" placeholder="Введите марку автомобиля">
           </label>
@@ -435,7 +435,30 @@
 
     </section>
     <section class="popular">
-      <h2 class="visually-hidden">Популярные товары</h2>
+      <h2 class="popular__title">Популярные товары</h2>
+      <div class="tabs">
+        <ul class="tabs__controls">
+          <li class="tabs__control">
+            <a class="tabs__link tabs__link--active" data-tab="1" href="#">запчасти</a>
+          </li>
+          <li class="tabs__control">
+            <a class="tabs__link" href="#" data-tab="2">автохимия</a>
+          </li>
+          <li class="tabs__control">
+            <a class="tabs__link" href="#" data-tab="3">шины и диски</a>
+          </li>
+          <li class="tabs__control">
+            <a class="tabs__link" href="#" data-tab="4">автоэлектроника</a>
+          </li>
+          <li class="tabs__control">
+            <a class="tabs__link" href="#" data-tab="5">инструменты</a>
+          </li>
+          <li class="tabs__control">
+            <a class="tabs__link" href="#" data-tab="6">аксессуары и другое</a>
+          </li>
+        </ul>
+      </div>
+
 
       <div class="popular__slider">
         <div class="swiper-prev swiper-btn"></div>
@@ -466,10 +489,12 @@
                     </div>
                   </div>
                   <div class="product-card__bottom">
-                    <h3 class="product-card__title">Ремень</h3>
-                    <span class="product-card__price">440&nbsp;&#8381;
-                    </span>
-                    <div class="to-cart-tag"></div>
+                    <div class="product-card__price-block">
+                      <h3 class="product-card__title">Ремень</h3>
+                      <span class="product-card__price">440&nbsp;&#8381;
+                      </span>
+                      <div class="to-cart-tag"></div>
+                    </div>
                   </div>
                 </a>
               </article>
@@ -502,11 +527,11 @@
                     </div>
                   </div>
                   <div class="product-card__bottom">
-                    <h3 class="product-card__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
-                    <span class="product-card__price">11&nbsp;680&nbsp;&#8381;
-
-                    </span>
-                    <div class="to-cart-tag"></div>
+                    <div class="product-card__price-block">
+                      <h3 class="product-card__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                      <span class="product-card__price">11&nbsp;680&nbsp;&#8381;</span>
+                      <div class="to-cart-tag"></div>
+                    </div>
                   </div>
                 </a>
               </article>
@@ -534,15 +559,17 @@
                     </div>
                   </div>
                   <div class="product-card__bottom">
-                    <h3 class="product-card__title">Фара Nokian 2025</h3>
-                    <span class="product-card__price">680&nbsp;&#8381;</span>
-                    <div class="to-cart-tag"></div>
+                    <div class="product-card__price-block">
+                      <h3 class="product-card__title">Фара Nokian 2025</h3>
+                      <span class="product-card__price">680&nbsp;&#8381;</span>
+                      <div class="to-cart-tag"></div>
+                    </div>
                   </div>
                 </a>
               </article>
             </div>
             <div class="swiper-slide">
-              <article class="product-card">
+              <article class="product-card product-card--out-of-stock">
                 <a class="product-card__inner" href="#">
                   <div class="product-card__top">
                     <div class="sale-tag">Sale</div>
@@ -569,20 +596,26 @@
                     </div>
                   </div>
                   <div class="product-card__bottom">
-                    <h3 class="product-card__title">Шина 245/60 R18 105T Contyther Crosh Conta...</h3>
-                    <span class="product-card__price">440&nbsp;&#8381;
-                    </span>
-                    <div class="to-cart-tag"></div>
+                    <div class="product-card__price-block  product-card__price-block--hide">
+                      <h3 class="product-card__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
+                      <span class="product-card__price">11&nbsp;680&nbsp;&#8381;</span>
+                      <div class="to-cart-tag"></div>
+                    </div>
+                    <div class="product-card__out-of-stock product-card__out-of-stock--show">
+                      <p>нет в наличии</p>
+                      <object>
+                        <a href="#">Сообщить о поступлении</a>
+                      </object>
+                    </div>
                   </div>
                 </a>
               </article>
             </div>
           </div>
-
-
         </div>
-      </div>
 
+      </div>
+      <button class="show-more" type="button">смотреть еще</button>
 
     </section>
 
