@@ -82,3 +82,20 @@ let mySwiper1 = new Swiper(sliderPop, {
     },
   }
 })
+let triggers = document.querySelectorAll('.footer__list h3');
+
+triggers.forEach((item) =>
+  item.addEventListener('click', () => {
+    const parent = item.nextElementSibling;
+
+    if (parent.classList.contains('js-submenu--active')) {
+      parent.classList.remove('js-submenu--active');
+      parent.classList.remove('hide');
+    } else {
+      document.querySelectorAll('.js-submenu').forEach((child) =>
+        child.classList.remove('js-submenu--active'))
+      parent.classList.add('js-submenu--active');
+      parent.classList.add('show');
+    }
+  })
+);
