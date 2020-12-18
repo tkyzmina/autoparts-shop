@@ -221,6 +221,7 @@
   </header>
   <main class="container">
     <section class="promo">
+      <h2 class="visually-hidden">Популярные категории</h2>
       <div class="promo__slider">
         <!-- Slider main container -->
         <div class="swiper-container">
@@ -459,7 +460,6 @@
         </ul>
       </div>
 
-
       <div class="popular__slider">
         <div class="swiper-prev swiper-btn"></div>
         <div class="swiper-next swiper-btn"></div>
@@ -470,14 +470,15 @@
             <div class="swiper-slide">
               <article class="product-card">
                 <a class="product-card__inner" href="#">
+                  <div class="product-card__show-more">быстрый просмотр</div>
                   <div class="product-card__top">
-                    <div class="fav-tag"></div>
                     <div class="product-card__tags">
-                      <button class="fav-tag" type="button" aria-label="Додбавить в избранное" tabindex="0">
+                      <div class="fav-tag">
+                        <p class="visually-hidden">Добавить в избранное</p>
                         <svg width="28" height="24">
                           <use xlink:href="#fav-icon"></use>
                         </svg>
-                      </button>
+                      </div>
                     </div>
                     <div class="product-card__img">
                       <picture>
@@ -502,14 +503,16 @@
             <div class="swiper-slide">
               <article class="product-card">
                 <a class="product-card__inner" href="#">
+                  <div class="product-card__show-more">быстрый просмотр</div>
                   <div class="product-card__top">
                     <div class="sale-tag">Sale</div>
                     <div class="product-card__tags">
-                      <button class="fav-tag" type="button" aria-label="Додбавить в избранное" tabindex="0">
+                      <div class="fav-tag">
+                        <p class="visually-hidden">Добавить в избранное</p>
                         <svg width="28" height="24">
                           <use xlink:href="#fav-icon"></use>
                         </svg>
-                      </button>
+                      </div>
                       <div class="snow-tag">
                         <svg width="27" height="30">
                           <use xlink:href="#snow-icon"></use>
@@ -539,13 +542,15 @@
             <div class="swiper-slide">
               <article class="product-card">
                 <a class="product-card__inner" href="#">
+                  <div class="product-card__show-more">быстрый просмотр</div>
                   <div class="product-card__top">
                     <div class="product-card__tags">
-                      <button class="fav-tag" type="button" aria-label="Додбавить в избранное" tabindex="0">
+                      <div class="fav-tag fav-tag--active">
+                        <p class="visually-hidden">Добавить в избранное</p>
                         <svg width="28" height="24">
                           <use xlink:href="#fav-icon"></use>
                         </svg>
-                      </button>
+                      </div>
                     </div>
 
                     <div class="product-card__img">
@@ -571,15 +576,16 @@
             <div class="swiper-slide">
               <article class="product-card product-card--out-of-stock">
                 <a class="product-card__inner" href="#">
+                  <div class="product-card__show-more">быстрый просмотр</div>
                   <div class="product-card__top">
                     <div class="sale-tag">Sale</div>
                     <div class="product-card__tags">
-                      <button class="fav-tag fav-tag--active" type="button" aria-label="Додбавить в избранное"
-                        tabindex="0">
+                      <div class="fav-tag">
+                        <p class="visually-hidden">Добавить в избранное</p>
                         <svg width="28" height="24">
                           <use xlink:href="#fav-icon"></use>
                         </svg>
-                      </button>
+                      </div>
                       <div class="sun-tag">
                         <svg width="31" height="31">
                           <use xlink:href="#sun-icon"></use>
@@ -596,17 +602,19 @@
                     </div>
                   </div>
                   <div class="product-card__bottom">
-                    <div class="product-card__price-block  product-card__price-block--hide">
+                    <div class="product-card__price-block">
                       <h3 class="product-card__title">Шина 205/80 R16 104Q Misha RF Power Grum</h3>
-                      <span class="product-card__price">11&nbsp;680&nbsp;&#8381;</span>
+                      <span class="product-card__price product-card__price--hide">11&nbsp;680&nbsp;&#8381;</span>
+                      <div class="product-card__out-of-stock product-card__out-of-stock--show">
+                        <p>нет в наличии</p>
+                        <div class="product-card__inform">
+                          <p>Сообщить о поступлении</p>
+                        </div>
+                      </div>
                       <div class="to-cart-tag"></div>
                     </div>
-                    <div class="product-card__out-of-stock product-card__out-of-stock--show">
-                      <p>нет в наличии</p>
-                      <object>
-                        <a href="#">Сообщить о поступлении</a>
-                      </object>
-                    </div>
+
+
                   </div>
                 </a>
               </article>
@@ -616,8 +624,12 @@
 
       </div>
       <button class="show-more" type="button">смотреть еще</button>
-
     </section>
+    <div class="banner">
+      <h3 class="banner__title">Sale до 50%</h3>
+      <p class="banner__text">на все колеса</p>
+      <a class="banner__button button" href="#">Посмотреть все</a>
+    </div>
 
 
   </main>
