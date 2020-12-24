@@ -36,7 +36,7 @@
       font-weight: $text-bold;
       color: $color-gray;
       background: #f0f0f4;
-      border-radius: 5px
+      border-radius: 5px;
     }
   }
 
@@ -52,7 +52,9 @@
 
 .search__form {
   display: none;
+  // opacity: 0;
   position: relative;
+  // tra
 
   input {
     width: 100%;
@@ -102,6 +104,7 @@
 
   &--active {
     display: block;
+    opacity: 1;
   }
 }
 
