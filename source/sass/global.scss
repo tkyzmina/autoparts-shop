@@ -23,13 +23,9 @@ body {
   color: $color-gray;
 }
 
-// .content-box {
-//   position: relative;
-//   width: 100%;
-//   max-width: $sm-container;
-//   margin: 0 auto;
-//   padding: 0;
-// }
+main {
+  overflow-x: hidden;
+}
 
 .page {
   position: relative;

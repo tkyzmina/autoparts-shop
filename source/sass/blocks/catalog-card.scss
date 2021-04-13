@@ -4,14 +4,13 @@
   justify-content: space-between;
   box-sizing: border-box;
   padding: 16px 25px;
-  padding-left: 19px;
-  text-decoration: none;
+  padding-left: 20px;
   color: $color-gray;
+  text-decoration: none;
   background: $color-white;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $color-very-light-grey;
   border-radius: 3px;
-  transition: all $transition-props;
-
+  transition: color $transition-props, border $transition-props, box-shadow $transition-props;
 
   &:hover,
   &:focus {
@@ -21,7 +20,6 @@
 
     border: 1px solid transparent;
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-    transition: all $transition-props;
   }
 }
 
@@ -30,7 +28,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  min-height: 89px;
+  min-height: 90px;
 
   h3 {
     margin: 0;
@@ -38,7 +36,7 @@
     font-weight: $text-bold;
     font-size: 23px;
     line-height: 28px;
-    transition: all $transition-props;
+    transition: color $transition-props;
   }
 
   span {
@@ -63,10 +61,10 @@
 
 .catalog-card__left {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 97px;
-  height: 97px;
+  justify-content: center;
+  width: 98px;
+  height: 98px;
   border-radius: 50%;
   background-color: $color-orange;
 
@@ -76,8 +74,6 @@
 }
 
 @media (max-width: 767px) {
-
-
   .catalog-card__left {
     width: 60px;
     height: 60px;

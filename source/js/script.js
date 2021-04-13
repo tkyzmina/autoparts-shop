@@ -1,25 +1,13 @@
 "use strict";
-var pageHeader = document.querySelector(".header");
-var main = document.querySelector("main");
-var mobileMenu = document.querySelector(".header__mob-menu");
-var headerToggle = document.querySelector(".header__button");
-
-// pageHeader.classList.remove('page-header--nojs');
+const pageHeader = document.querySelector(".header");
+const main = document.querySelector("main");
+const mobileMenu = document.querySelector(".header__mob-menu");
+const headerToggle = document.querySelector(".header__button");
 
 headerToggle.addEventListener("click", function () {
   headerToggle.classList.toggle("header__button--active");
   mobileMenu.classList.toggle("header__mob-menu--show");
   headerToggle.classList.toggle("header__button--mobile");
-  // pageHeader.classList.toggle('header--show-menu');
-  // main.classList.toggle('main--show-menu');
-
-  // if (pageHeader.classList.contains('page-header--closed')) {
-  //   headerToggle.classList.add('header__button--active');
-  // } else {
-  //   headerToggle.classList.remove('header__button--active');
-  //   // pageHeader.classList.add('page-header--closed');
-  //   // pageHeader.classList.remove('page-header--opened');
-  // }
 });
 
 const slider = document.querySelector(".swiper-container");
@@ -86,7 +74,7 @@ let triggers = document.querySelectorAll(".footer__list h3");
 triggers.forEach((item) =>
   item.addEventListener("click", () => {
     const parent = item.nextElementSibling;
-
+    item.classList.toggle("trigger--active");
     if (parent.classList.contains("js-submenu--active")) {
       parent.classList.remove("js-submenu--active");
       parent.classList.remove("hide");

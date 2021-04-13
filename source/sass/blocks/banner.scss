@@ -6,16 +6,16 @@
   padding: 30px 40px 22px;
   text-align: center;
   color: $color-white;
-  background: linear-gradient(91.1deg, #9710E9 1.17%, #FD8D43 99.31%);
+  background: linear-gradient(90deg, #9710e9 1.2%, #fd8d43 99%);
 
   h3 {
     margin: 0;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
     padding: 0;
     font-family: $font-main;
     font-size: 70px;
-    font-weight: $text-bold;
     line-height: 70px;
+    font-weight: $text-bold;
     letter-spacing: 5px;
     text-transform: uppercase;
   }
@@ -25,8 +25,8 @@
     padding: 0;
     font-family: $font-main;
     font-size: 28px;
-    font-weight: $text-bold;
     line-height: 32px;
+    font-weight: $text-bold;
     letter-spacing: 1px;
   }
 
@@ -37,8 +37,8 @@
     padding: 16px 30px 14px;
     font-family: $font-main;
     font-size: 16px;
-    font-weight: $text-bold;
     line-height: 10px;
+    font-weight: $text-bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: $color-orange;
@@ -51,12 +51,12 @@
       box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
     }
 
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     width: auto;
     margin-left: -25px;
     margin-right: -25px;
