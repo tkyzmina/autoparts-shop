@@ -74,10 +74,8 @@ let triggers = document.querySelectorAll(".footer__list h3");
 triggers.forEach((item) =>
   item.addEventListener("click", () => {
     const parent = item.nextElementSibling;
-
+    item.classList.toggle("trigger--active");
     if (parent.classList.contains("js-submenu--active")) {
-      item.classList.add("trigger--active");
-
       parent.classList.remove("js-submenu--active");
       parent.classList.remove("hide");
     } else {
