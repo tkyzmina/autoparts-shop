@@ -36,7 +36,7 @@
   right: -60px;
 }
 
-@media(max-width: 1290px) {
+@media (max-width: 1290px) {
   .popular__slider {
     margin: 0 auto;
     margin-bottom: 40px;
@@ -44,22 +44,20 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .popular__slider {
     width: 75%;
   }
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .popular__slider {
-    // margin: 0 auto;
     width: 270px;
   }
 }
 
-@media(max-width: 425px) {
+@media (max-width: 425px) {
   .popular__slider {
-    // margin: 0 auto;
     width: 270px;
   }
 
@@ -82,7 +80,7 @@
   color: #bdbec2;
   letter-spacing: 0.12em;
   border: none;
-  background-color: #f0f0f4;
+  background-color: $color-lavender;
   cursor: pointer;
   transition: color $transition-props;
 

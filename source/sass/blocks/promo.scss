@@ -7,7 +7,7 @@
 }
 
 .promo__slider {
-  width: 74.36%;
+  width: 74%;
 
   .swiper-slide {
     width: 100%;
@@ -28,7 +28,7 @@
 }
 
 .promo__block {
-  width: 23.1%;
+  width: 23%;
 }
 
 .promo__card {
@@ -42,7 +42,6 @@
 
   &:hover,
   &:focus {
-    // border: 1px solid transparent;
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
   }
 }
@@ -139,7 +138,6 @@
   }
 }
 
-
 .promo__card-title {
   margin: 0;
   margin-bottom: 12px;
@@ -212,7 +210,6 @@
         &::after {
           content: none;
         }
-
       }
     }
   }
